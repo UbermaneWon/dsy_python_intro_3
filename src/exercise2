@@ -1,0 +1,44 @@
+while true:
+    number = input ('Enter a number: ')
+    if number == 'done' :
+        break
+
+    try:
+        number = int(number)
+        count = count + 1
+        total = total + number
+    except:
+        print ('Invalid input, try again')
+
+    average = total + number
+    print (total, count, average)
+
+-------------------------------------
+
+
+count = 0
+total = 0
+largest = None
+smallest = None
+while True:
+	number = input('Enter a number: ')
+	if number == 'done': break
+	number = float(number)
+
+		largest = number
+		smallest = number
+
+	elif number > largest:
+		largest = number
+
+	elif number < smallest:
+		smallest = number
+	count = count + 1
+	total = total + number
+	print(number)
+
+print('Total: ', total)
+print('Count: ', count)
+print('Average: ', total/count)
+print('Largest: ', largest)
+print('Smallest: ', smallest)

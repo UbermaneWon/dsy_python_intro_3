@@ -1,19 +1,15 @@
-total = 0
-count = 0
-
-while True:
-    number = input('Enter a number: ')
-
-    if number == 'done':
+while true:
+    number = input ('Enter a number: ')
+    if number == 'done' :
         break
 
     try:
         number = int(number)
-        total = total + number
         count = count + 1
+        total = total + number
     except:
-        print('Invalid Number')
+        print ('Invalid input, try again')
 
-average = total / count
-
-print(total, count, average)
+    average = total + number
+    print (total, count, average)
+    
